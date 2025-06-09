@@ -15,14 +15,18 @@ public class Libro {
     private String autor;
     private String idioma;
     private double cantidadDescargas;
+    private Integer añoNacimientoAutor;
+    private Integer añoFallecimientoAutor;
 
     public Libro(){}
 
-    public Libro(String titulo, String autor, String idioma, double cantidadDescargas) {
+    public Libro(String titulo, String autor, String idioma, double cantidadDescargas, Integer añoNacimientoAutor, Integer añoFallecimientoAutor) {
         this.titulo = titulo;
         this.autor = autor;
         this.idioma = idioma;
         this.cantidadDescargas = cantidadDescargas;
+        this.añoNacimientoAutor = añoNacimientoAutor;
+        this.añoFallecimientoAutor = añoFallecimientoAutor;
     }
 
     public Long getId() {
@@ -65,9 +69,25 @@ public class Libro {
         this.cantidadDescargas = cantidadDescargas;
     }
 
+    public Integer getAñoNacimientoAutor() {
+        return añoNacimientoAutor;
+    }
+
+    public void setAñoNacimientoAutor(Integer añoNacimientoAutor) {
+        this.añoNacimientoAutor = añoNacimientoAutor;
+    }
+
+    public Integer getAñoFallecimientoAutor() {
+        return añoFallecimientoAutor;
+    }
+
+    public void setAñoFallecimientoAutor(Integer añoFallecimientoAutor) {
+        this.añoFallecimientoAutor = añoFallecimientoAutor;
+    }
+
     @Override
     public String toString() {
-        return "----- Libro -----\n" +
+        return "\n----- Libro -----\n" +
                 "ID: " + id + "\n" +
                 "Título: " + titulo + "\n" +
                 "Autor: " + autor + "\n" +
