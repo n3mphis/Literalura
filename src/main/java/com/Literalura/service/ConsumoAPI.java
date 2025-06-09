@@ -1,4 +1,4 @@
-package com.Literalura.model;
+package com.Literalura.service;
 
 import java.io.IOException;
 import java.net.http.HttpClient;
