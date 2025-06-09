@@ -3,7 +3,7 @@ package com.Literalura.model;
 import jakarta.persistence.*;
 import jdk.jfr.Enabled;
 
-@Enabled
+@Entity
 @Table(name = "libros")
 public class Libro {
     @Id
